@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/load.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <title>TrinkaFive Dark Theme Contact</title>
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark menu fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-work.html">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- * Contact Header -->
+    <section id="contact-header" class="contact-header  text-white  text-center py-5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="header-content d-flex flex-column align-items-center mt-4">
+                <h1 class="display-1 ">Contact Us</h1>
+               <h3>We would love to hear from you</h3>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- * Map -->
+
+    <section class="p-5 map-section text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="mb-4 ms-3">Contact Info:</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item text-right">
+                            <span class="me-2"><img src="assets/images/location.png" alt="Location Icon"></span>
+                            5124 Classen Cir, Oklahoma City, OK 73118
+                        </li>
+                        <li class="list-group-item text-right">
+                            <span class="me-2"><img src="assets/images/phone.png" alt="Phone Icon"></span>
+                            (405) 844-2730
+                        </li>
+                        <li class="list-group-item text-right">
+                            <span class="me-2"><img src="assets/images/fax.png" alt="Fax Icon"></span>
+                            (405) 844-2700
+                        </li>
+                        <li class="list-group-item text-right">
+                            <span class="me-2"><img src="assets/images/email.png" alt="Email Icon"></span>
+                            <a href="mailto:hefleykent@gmail.com">info@trinkafive.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+   
+
+    <!-- * Contact Form -->
+    <section class="p-5 text-dark form-section">
+        <div class="container">
+            <h1 class="text-center mb-3">What's on your mind?</h1>
+      <div class="line mx-auto mb-4 dark-line"></div>
+      <form class="row g-3 mx-auto">
+          <div class="form-group col-md-6">
+              <label for="first-name" class=form-label>*First Name</label>
+              <input type="text" class="form-control" id="first-name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="last-name" class=form-label>*Last Name</label>
+            <input type="text" class="form-control" id="last-name" required>
+        </div>
+          <div class="form-group col-md-7">
+            <label for="email" class=form-label>*Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group col-md-5">
+            <label for="phone" class=form-label>Phone Number</label>
+            <input type="text" class="form-control" id="phone" placeholder="+1 (405) 533-1234">
+        </div>
+        <div class="form-group">
+            <label for="message" class=form-label>*Your Message</label>
+            <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
+        </div>
+       <div class="col-md-12">
+           <button type="submit" class="btn btn-primary btn-lg text-white">Submit</button>
+       </div>
+      </form>
+        </div>
+    </section>
+
+    <!-- *Footer -->
+    <footer class="text-white text-center p-4">
+        <img src="assets/images/logo.svg" class="mb-2 d-block mx-auto" alt="TrinkaFive">
+        <div class="service-row d-inline-flex align-items-center justify-content-between mb-4">
+            <p>Services</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-caret-right-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg>
+            <p>Products</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-caret-right-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg>
+            <p>Goods</p>
+        </div>
+        <p class="mb-3">&copy
+            <script>document.write(new Date().getFullYear());</script> | TrinkaFive Media | All Rights Reserved |
+            Powered by
+            TrinkaFive Media
+        </p>
+        <div class="social">
+            <a href="#"><img class="img-fluid social-img mx-1" src="assets/images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img class="img-fluid social-img mx-1" src="assets/images/dribbble.svg" alt="Facebook"></a>
+            <a href="#"><img class="img-fluid social-img mx-1" src="assets/images/linkedin.svg" alt="Facebook"></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiaGVmbGV5a2VudCIsImEiOiJja3RlZXJnbjIycGJlMm9wZ2hsa2x5Z3NiIn0.6TDU6zpT7H6dVUf0tHWLSg';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-97.53231683399595, 35.52311012326066],
+        zoom: 18,
+        });
+    </script>
+</body>
+
+</html>
